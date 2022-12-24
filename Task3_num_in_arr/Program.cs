@@ -2,13 +2,13 @@
 int[] arr = {6, 7, 19, 345, 3};
 
 Console.WriteLine("введите число N");
-int num = Convert.ToInt32(Console.ReadLine());
-int sum = 0;
+int num = int.Parse(Console.ReadLine());
+bool  res = false;
 
 for (int i = 0; i < arr.Length; i++)
   {
-    if (arr[i] == num) sum ++;
+    if (arr[i] == num) res = true;
   }
 
-if(sum > 0) Console.WriteLine("да");
+if(res) Console.WriteLine("да");
 else Console.WriteLine("нет");
