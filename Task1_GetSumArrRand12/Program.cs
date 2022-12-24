@@ -16,6 +16,5 @@ int summinus = 0;
   }
 
 Console.WriteLine(String.Join((", "), (arr0)));
-Console.WriteLine(sumplus);
-Console.WriteLine(summinus);
+Console.WriteLine("Сумма положительных элементов =" + sumplus + "| Сумма отрицательных элементов =" + summinus);
 
