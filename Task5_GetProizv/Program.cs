@@ -18,6 +18,7 @@ Console.WriteLine(String.Join((", "), (arr0)));
  for (int j = 0; j < length; j++)
   {
     arr1[j] = arr0[j] * arr0[arr0.Length - 1 - j];
+    if(j == arr0.Length - 1 - j) arr1[j] = arr0[j];
     Console.Write(arr1[j] + " ");
   }
 Console.WriteLine();
